@@ -11,7 +11,7 @@ import axios from "axios";
 function App() {
   const [apiReady, setApiReady] = useState(false);
   const [loading, setLoading] = useState(true);
-  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000/api";
+  const API_URL = import.meta.env.VITE_API_URL || "https://swipe-93k2.onrender.com/api";
 
   const checkApi = async () => {
     try {
