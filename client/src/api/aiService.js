@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API_BASE_URL =
-  import.meta.env.VITE_API_URL || "http://localhost:8000/api";
+  import.meta.env.VITE_API_URL || "https://swipe-93k2.onrender.com/api";
 export async function generateQuestions(role = "Full-Stack Developer") {
   try {
     const { data } = await axios.post(`${API_BASE_URL}/generate-questions`, {
