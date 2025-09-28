@@ -130,7 +130,7 @@ const ResumeUploader = ({ onComplete }) => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         {/* Enhanced Upload Card */}
         <div className="relative animate-slide-in-left">
-          <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur opacity-25"></div>
+          <div className="absolute -inset-1 bg-gradient-to-r  rounded-2xl blur opacity-25"></div>
           <Card
             className="relative bg-white/80 backdrop-blur-sm border-0 shadow-2xl rounded-2xl overflow-hidden card-hover"
             bodyStyle={{ padding: '2rem' }}
