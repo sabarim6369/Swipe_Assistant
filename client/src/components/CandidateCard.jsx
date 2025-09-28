@@ -120,10 +120,32 @@ const CandidateCard = ({ candidate, interview, onClose }) => {
 
 
           {candidate.skills && candidate.skills.length > 0 && (
-            <Card title="Skills" className="shadow-sm mb-6">
-              <div className="flex flex-wrap gap-2">
+            <Card 
+              title="Skills" 
+              className="shadow-sm mb-6"
+              bodyStyle={{ padding: '16px', minHeight: 'auto' }}
+            >
+              <div 
+                className="flex flex-wrap gap-2 w-full"
+                style={{ minHeight: 'auto', overflow: 'visible' }}
+              >
                 {candidate.skills.map((skill, index) => (
-                  <Tag key={index} color="blue">{skill}</Tag>
+                  <Tag 
+                    key={index} 
+                    color="blue" 
+                    className="mb-2 text-sm px-2 py-1"
+                    style={{ 
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      maxWidth: '100%',
+                      wordBreak: 'break-word',
+                      whiteSpace: 'normal',
+                      height: 'auto',
+                      lineHeight: '1.4'
+                    }}
+                  >
+                    {skill}
+                  </Tag>
                 ))}
               </div>
             </Card>
